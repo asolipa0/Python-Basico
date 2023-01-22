@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="51px" height="51px" viewBox="0 0 51 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>33ADF7AF-77E8-4889-A35E-9C382B86F3E5</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="solyd_courses_details" transform="translate(-939.000000, -1036.000000)" stroke="#00DCB3" stroke-width="2">
+            <g id="headphones-mic" transform="translate(940.000000, 1037.000000)">
+                <path d="M7,35 L7,39.7214612 C7,43.1893075 9.98444444,46 13.6666667,46 L17,46" id="Shape" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M7,16 L7,15.4355017 C7,6.9106946 13.855625,0 22.3125,0 L26.6875,0 C35.144375,0 42,6.9106946 42,15.4355017 L42,16" id="Shape" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M12,16.2438333 C11.2974545,16.0886667 10.5687273,16 9.81818182,16 C4.39527273,16 0,20.2528333 0,25.5 C0,30.7471667 4.39527273,35 9.81818182,35 C10.5687273,35 11.2974545,34.9113333 12,34.7561667 L12,16.2438333 Z" id="Shape" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M9,16.25 L9,34.75" id="Line-4" stroke-linecap="square"></path>
+                <path d="M37,16.2438333 C37.7025455,16.0886667 38.4312727,16 39.1818182,16 C44.6047273,16 49,20.2528333 49,25.5 C49,30.7471667 44.6047273,35 39.1818182,35 C38.4312727,35 37.7025455,34.9113333 37,34.7561667 L37,16.2438333 Z" id="Shape" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M41,16.25 L41,34.7567555" id="Line-5" stroke-linecap="square"></path>
+                <rect id="Rectangle-path" stroke-linecap="round" stroke-linejoin="round" x="17" y="44" width="13" height="5"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://solyd.com.br/treinamentos/python-basico/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Python Básico | Solyd Offensive Security</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="./Python Básico _ Solyd Offensive Security_files/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="./Python Básico _ Solyd Offensive Security_files/footer.css">
+
+    <!-- Facebook Pixel Code -->
+
+    <script type="text/javascript" async="" src="./Python Básico _ Solyd Offensive Security_files/js"></script><script src="./Python Básico _ Solyd Offensive Security_files/435935330582832" async=""></script><script async="" src="./Python Básico _ Solyd Offensive Security_files/fbevents.js.download"></script><script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '435935330582832');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=435935330582832&ev=PageView&noscript=1"
+    /></noscript>
+
+<!-- End Facebook Pixel Code -->
+    
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="./Python Básico _ Solyd Offensive Security_files/js(1)"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7GJPLJ7LT5');
+      gtag('config', 'AW-10897096684');
+    </script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://cdn.ead.guru/74/media/public/solyd-logo-perfil-hd.png" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="https://cdn.ead.guru/74/media/public/solyd-logo-perfil-hd.png"> 
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://cdn.ead.guru/74/media/public/solyd-logo-perfil-hd.png"> 
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://cdn.ead.guru/74/media/public/solyd-logo-perfil-hd.png"> 
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://cdn.ead.guru/74/media/public/solyd-logo-perfil-hd.png"> 
+
+    <script src="./Python Básico _ Solyd Offensive Security_files/jquery-3.5.1.min.js.download"></script>
+    <script src="./Python Básico _ Solyd Offensive Security_files/semantic.min.js.download"></script>
+
+    <!-- Website CSS -->
+    <link rel="stylesheet" type="text/css" href="./Python Básico _ Solyd Offensive Security_files/website.css">
+    <link rel="stylesheet" type="text/css" href="./Python Básico _ Solyd Offensive Security_files/videorenderer.css">
+    <link rel="stylesheet" href="./Python Básico _ Solyd Offensive Security_files/star-rating-svg.css">
+    <link rel="stylesheet" href="./Python Básico _ Solyd Offensive Security_files/star-rating-custom.css">
+    
+        <meta name="description" content="Inicie no mundo da programação rapidamente com Python, com aulas práticas e fáceis de serem acompanhadas.">
+    
+        <meta property="og:image" content="https://cdn.ead.guru/74/media/public/3-2_Large_6d1SbZp.jpeg">
+    
+<meta http-equiv="origin-trial" content="A751Xsk4ZW3DVQ8WZng2Dk5s3YzAyqncTzgv+VaE6wavgTY0QHkDvUTET1o7HanhuJO8lgv1Vvc88Ij78W1FIAAAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A751Xsk4ZW3DVQ8WZng2Dk5s3YzAyqncTzgv+VaE6wavgTY0QHkDvUTET1o7HanhuJO8lgv1Vvc88Ij78W1FIAAAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script type="text/javascript" async="" src="./Python Básico _ Solyd Offensive Security_files/f.txt"></script><style type="text/css"></style></head>
+<body id="example" class="index pushable">
+
+<div class="ui vertical sidebar menu left" id="toc">
+    <div class="item">
+        <a class="ui image" href="https://solyd.com.br/">
+            <img src="./Python Básico _ Solyd Offensive Security_files/logo-solyd.png">
+        </a>
+    </div>
+    <a class="item" href="#">
+        <b>Home</b>
+    </a>
+    <a class="item" href="#">
+        <b>Treinamentos</b>
+    </a>
+    <a class="item" href="#">
+        <b>Contato</b>
+    </a>
+    <a class="item" href="#">
+        <b>
+            
+                Painel do aluno
+            
+        </b>
+    </a>
+</div>
+
+<div class="pusher">
+    <div class="full height">
+        
+    <!-- Following menu -->
+    <div id="context">
+        <div class="following bar light fixed">
+            <div class="ui large secondary network menu">
+                <div class="ui container">
+
+                    <div class="item">
+                        <div class="ui logo shape">
+                            <div class="sides">
+                                <div class="active ui side">
+                                    <a href="https://solyd.com.br/">
+                                        <img id="following_logo" class="ui image" src="./Python Básico _ Solyd Offensive Security_files/logo-solyd.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right menu">
+
+                        <a class="link item pc_item" href="./Python Básico _ Solyd Offensive Security_files/Python Básico.png">
+                            Meu Certificado
+                        </a>
+                        <a class="item toggle mobile_item" id="responsive_menu_button">
+                            <i class="content icon"></i>
+                            Menu
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui grid container" id="clear_sticky">
+            <div class="four wide column pc_item" style="height: 2972.19px; min-height: 346.031px;">
+                
+                <div class="ui sticky fixed top" style="left: 68px; width: 260.75px !important; height: 346.031px !important; margin-top: 80px;">
+                    <div class="ui raised segment" style="border-top-left-radius: 0.285714rem; border-top-right-radius: 0.285714rem; border-top: 1px solid rgba(34, 36, 38, 0.15);" id="sticky-segment">
+                        <div class="ui items">
+                            <div class="item">
+                                <div class="content">
+                                    <h2 class="ui header">
+                                        
+                                            Gratuito
+                                        
+                                    </h2>
+                                    <div class="ui hidden divider"></div>
+                                    <div class="description">
+                                        <div class="ui items">
+                                            <div class="item">
+                                                <div class="ui image">
+                                                    <img class="extra-mini" src="./Python Básico _ Solyd Offensive Security_files/clock_icon.svg">
+                                                </div>
+                                                <div class="middle aligned content">
+                                                    <h4>Carga horária: 8h</h4>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="ui image">
+                                                    <img class="extra-mini" src="./Python Básico _ Solyd Offensive Security_files/responsive_icon.svg">
+                                                </div>
+                                                <div class="middle aligned content">
+                                                    <h4>Todos dispositivos</h4>
+                                                </div>
+                                            </div>
+                                            
+                                                <div class="item">
+                                                    <div class="ui image">
+                                                        <img class="extra-mini" src="./Python Básico _ Solyd Offensive Security_files/pratical_icon.svg">
+                                                    </div>
+                                                    <div class="middle aligned content">
+                                                        <h4>Exercícios práticos</h4>
+                                                    </div>
+                                                </div>
+                                            
+                                            
+                                                <div class="item">
+                                                    <div class="ui image">
+                                                        <img class="extra-mini" src="./Python Básico _ Solyd Offensive Security_files/lifetime_icon.svg">
+                                                    </div>
+                                                    <div class="middle aligned content">
+                                                        
+                                                            <h4>Acesso vitalício</h4>
+                                                        
+                                                    </div>
+                                                </div>
+                                            
+                                            
+                                                <div class="item">
+                                                    <div class="ui image">
+                                                        <img class="extra-mini" src="./Python Básico _ Solyd Offensive Security_files/suport_icon.svg">
+                                                    </div>
+                                                    <div class="middle aligned content">
+                                                        <h4>Suporte a dúvidas</h4>
+                                                    </div>
+                                                </div>
+                                            
+                                            
+                                                <div class="item">
+                                                    <div class="ui image">
+                                                        <img class="extra-mini" src="./Python Básico _ Solyd Offensive Security_files/certificate_icon.svg">
+                                                    </div>
+                                                    <div class="middle aligned content">
+                                                        <h4>Certificado</h4>
+                                                    </div>
+                                                </div>
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Breadcrumb and lateral menu-->
+        <div class="header_breadcrumb" id="course_header">
+            <div class="ui grid container">
+                <div class="four wide column pc_item">
+                    
+                </div>
+
+                <div class="twelve wide column bigbig">
+                    <div class="ui breadcrumb">
+                        <a href="#" class="section">Home</a>
+                        <div class="divider"> /</div>
+                        <a href="#" class="section">Treinamentos</a>
+                        <div class="divider"> /</div>
+                        <a href="#" class="active section">Python Básico</a>
+                    </div>
+
+                    <h1 class="ui inverted header">
+                        <div class="content">
+                            Python Básico
+                            
+                                <div class="sub header">
+                                    <div class="course-rating" data-rating="4.9" style="display: inline;"><div class="jq-star" style="width:20px;  height:20px;"><svg version="1.0" class="jq-star-svg" shape-rendering="geometricPrecision" xmlns="http://www.w3.org/2000/svg" width="550px" height="500.2px" viewBox="0 146.8 550 500.2" style="enable-background:new 0 0 550 500.2; stroke-width:4px;" xml:space="preserve"><style type="text/css">.svg-empty-350{fill:url(#350_SVGID_1_);}.svg-hovered-350{fill:url(#350_SVGID_2_);}.svg-active-350{fill:url(#350_SVGID_3_);}.svg-rated-350{fill:crimson;}</style><lineargradient id="350_SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="-50" x2="0" y2="500"><stop offset="0" style="stop-color:lightgray"></stop><stop offset="1" style="stop-color:lightgray"></stop> </lineargradient><lineargradient id="350_SVGID_2_" gradientUnits="userSpaceOnUse" x1="0" y1="-50" x2="0" y2="500"><stop offset="0" style="stop-color:#f4c459"></stop><stop offset="1" style="stop-color:#f4c459"></stop> </lineargradient><lineargradient id="350_SVGID_3_" gradientUnits="userSpaceOnUse" x1="0" y1="-50" x2="0" y2="500"><stop offset="0" style="stop-color:#f4c459"></stop><stop offset="1" style="stop-color:#f4c459"></stop> </lineargradient><path data-side="center" class="svg-empty-350" d="M520.9,336.5c-3.8-11.8-14.2-20.5-26.5-22.2l-140.9-20.5l-63-127.7 c-5.5-11.2-16.8-18.2-29.3-18.2c-12.5,0-23.8,7-29.3,18.2l-63,127.7L28,314.2C15.7,316,5.4,324.7,1.6,336.5S1,361.3,9.9,370 l102,99.4l-24,140.3c-2.1,12.3,2.9,24.6,13,32c5.7,4.2,12.4,6.2,19.2,6.2c5.2,0,10.5-1.2,15.2-3.8l126-66.3l126,66.2 c4.8,2.6,10,3.8,15.2,3.8c6.8,0,13.5-2.1,19.2-6.2c10.1-7.3,15.1-19.7,13-32l-24-140.3l102-99.4 C521.6,361.3,524.8,348.3,520.9,336.5z" style="stroke: black; fill: transparent; "></path><path data-side="right" class="svg-active-350" d="M520.9,336.5c-3.8-11.8-14.2-20.5-26.5-22.2l-140.9-20.5l-63-127.7 c-5.5-11.2-16.8-18.2-29.3-18.2c-12.5,0-23.8,7-29.3,18.2l-63,127.7L28,314.2C15.7,316,5.4,324.7,1.6,336.5S1,361.3,9.9,370 l102,99.4l-24,140.3c-2.1,12.3,2.9,24.6,13,32c5.7,4.2,12.4,6.2,19.2,6.2c5.2,0,10.5-1.2,15.2-3.8l126-66.3l126,66.2 c4.8,2.6,10,3.8,15.2,3.8c6.8,0,13.5-2.1,19.2-6.2c10.1-7.3,15.1-19.7,13-32l-24-140.3l102-99.4 C521.6,361.3,524.8,348.3,520.9,336.5z" style="stroke-opacity: 0;"></path><path data-side="left" class="svg-active-350" d="M121,648c-7.3,0-14.1-2.2-19.8-6.4c-10.4-7.6-15.6-20.3-13.4-33l24-139.9l-101.6-99 c-9.1-8.9-12.4-22.4-8.6-34.5c3.9-12.1,14.6-21.1,27.2-23l140.4-20.4L232,164.6c5.7-11.6,17.3-18.8,30.2-16.8c0.6,0,1,0.4,1,1 v430.1c0,0.4-0.2,0.7-0.5,0.9l-126,66.3C132,646.6,126.6,648,121,648z" style="stroke: black; stroke-opacity: 0;"></path></svg></div><div class="jq-star" style="width:20px;  height:20px;"><svg version="1.0" class="jq-star-svg" shape-rendering="geometricPrecision" xmlns="http://www.w3.org/2000/svg" width="550px" height="500.2px" viewBox="0 146.8 550 500.2" style="enable-background:new 0 0 550 500.2; stroke-width:4px;" xml:space="preserve"><style type="text/css">.svg-empty-350{fill:url(#350_SVGID_1_);}.svg-hovered-350{fill:url(#350_SVGID_2_);}.svg-active-350{fill:url(#350_SVGID_3_);}.svg-rated-350{fill:crimson;}</style><lineargradient id="350_SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="-50" x2="0" y2="500"><stop offset="0" style="stop-color:lightgray"></stop><stop offset="1" style="stop-color:lightgray"></stop> </lineargradient><lineargradient id="350_SVGID_2_" gradientUnits="userSpaceOnUse" x1="0" y1="-50" x2="0" y2="500"><stop offset="0" style="stop-color:#f4c459"></stop><stop offset="1" style="stop-color:#f4c459"></stop> </lineargradient><lineargradient id="350_SVGID_3_" gradientUnits="userSpaceOnUse" x1="0" y1="-50" x2="0" y2="500"><stop offset="0" style="stop-color:#f4c459"></stop><stop offset="1" style="stop-color:#f4c459"></stop> </lineargradient><path data-side="center" class="svg-empty-350" d="M520.9,336.5c-3.8-11.8-14.2-20.5-26.5-22.2l-140.9-20.5l-63-127.7 c-5.5-11.2-16.8-18.2-29.3-18.2c-12.5,0-23.8,7-29.3,18.2l-63,127.7L28,314.2C15.7,316,5.4,324.7,1.6,336.5S1,361.3,9.9,370 l102,99.4l-24,140.3c-2.1,12.3,2.9,24.6,13,32c5.7,4.2,12.4,6.2,19.2,6.2c5.2,0,10.5-1.2,15.2-3.8l126-66.3l126,66.2 c4.8,2.6,10,3.8,15.2,3.8c6.8,0,13.5-2.1,19.2-6.2c10.1-7.3,15.1-19.7,13-32l-24-140.3l102-99.4 C521.6,361.3,524.8,348.3,520.9,336.5z" style="stroke: black; fill: transparent; "></path><path data-side="right" class="svg-active-350" d="M520.9,336.5c-3.8-11.8-14.2-20.5-26.5-22.2l-140.9-20.5l-63-127.7 c-5.5-11.2-16.8-18.2-29.3-18.2c-12.5,0-23.8,7-29.3,18.2l-63,127.7L28,314.2C15.7,316,5.4,324.7,1.6,336.5S1,361.3,9.9,370 l102,99.4l-24,140.3c-2.1,12.3,2.9,24.6,13,32c5.7,4.2,12.4,6.2,19.2,6.2c5.2,0,10.5-1.2,15.2-3.8l126-66.3l126,66.2 c4.8,2.6,10,3.8,15.2,3.8c6.8,0,13.5-2.1,19.2-6.2c10.1-7.3,15.1-19.7,13-32l-24-140.3l102-99.4 C521.6,361.3,524.8,348.3,520.9,336.5z" style="stroke-opacity: 0;"></path><path data-side="left" class="svg-active-350" d="M121,648c-7.3,0-14.1-2.2-19.8-6.4c-10.4-7.6-15.6-20.3-13.4-33l24-139.9l-101.6-99 c-9.1-8.9-12.4-22.4-8.6-34.5c3.9-12.1,14.6-21.1,27.2-23l140.4-20.4L232,164.6c5.7-11.6,17.3-18.8,30.2-16.8c0.6,0,1,0.4,1,1 v430.1c0,0.4-0.2,0.7-0.5,0.9l-126,66.3C132,646.6,126.6,648,121,648z" style="stroke: black; stroke-opacity: 0;"></path></svg></div><div class="jq-star" style="width:20px;  height:20px;"><svg version="1.0" class="jq-star-svg" shape-rendering="geometricPrecision" xmlns="http://www.w3.org/2000/svg" width="550px" height="500.2px" viewBox="0 146.8 550 500.2" style="enable-background:new 0 0 550 500.2; stroke-width:4px;" xml:space="preserve"><style type="text/css">.svg-empty-350{fill:url(#350_SVGID_1_);}.svg-hovered-350{fill:url(#350_SVGID_2_);}.svg-active-350{fill:url(#350_SVGID_3_);}.svg-rated-350{fill:crimson;}</style><lineargradient id="350_SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="-50" x2="0" y2="500"><stop offset="0" style="stop-color:lightgray"></stop><stop offset="1" style="stop-color:lightgray"></stop> </lineargradient><lineargradient id="350_SVGID_2_" gradientUnits="userSpaceOnUse" x1="0" y1="-50" x2="0" y2="500"><stop offset="0" style="stop-color:#f4c459"></stop><stop offset="1" style="stop-color:#f4c459"></stop> </lineargradient><lineargradient id="350_SVGID_3_" gradientUnits="userSpaceOnUse" x1="0" y1="-50" x2="0" y2="500"><stop offset="0" style="stop-color:#f4c459"></stop><stop offset="1" style="stop-color:#f4c459"></stop> </lineargradient><path data-side="center" class="svg-empty-350" d="M520.9,336.5c-3.8-11.8-14.2-20.5-26.5-22.2l-140.9-20.5l-63-127.7 c-5.5-11.2-16.8-18.2-29.3-18.2c-12.5,0-23.8,7-29.3,18.2l-63,127.7L28,314.2C15.7,316,5.4,324.7,1.6,336.5S1,361.3,9.9,370 l102,99.4l-24,140.3c-2.1,12.3,2.9,24.6,13,32c5.7,4.2,12.4,6.2,19.2,6.2c5.2,0,10.5-1.2,15.2-3.8l126-66.3l126,66.2 c4.8,2.6,10,3.8,15.2,3.8c6.8,0,13.5-2.1,19.2-6.2c10.1-7.3,15.1-19.7,13-32l-24-140.3l102-99.4 C521.6,361.3,524.8,348.3,520.9,336.5z" style="stroke: black; fill: transparent; "></path><path data-side="right" class="svg-active-350" d="M520.9,336.5c-3.8-11.8-14.2-20.5-26.5-22.2l-140.9-20.5l-63-127.7 c-5.5-11.2-16.8-18.2-29.3-18.2c-12.5,0-23.8,7-29.3,18.2l-63,127.7L28,314.2C15.7,316,5.4,324.7,1.6,336.5S1,361.3,9.9,370 l102,99.4l-24,140.3c-2.1,12.3,2.9,24.6,13,32c5.7,4.2,12.4,6.2,19.2,6.2c5.2,0,10.5-1.2,15.2-3.8l126-66.3l126,66.2 c4.8,2.6,10,3.8,15.2,3.8c6.8,0,13.5-2.1,19.2-6.2c10.1-7.3,15.1-19.7,13-32l-24-140.3l102-99.4 C521.6,361.3,524.8,348.3,520.9,336.5z" style="stroke-opacity: 0;"></path><path data-side="left" class="svg-active-350" d="M121,648c-7.3,0-14.1-2.2-19.8-6.4c-10.4-7.6-15.6-20.3-13.4-33l24-139.9l-101.6-99 c-9.1-8.9-12.4-22.4-8.6-34.5c3.9-12.1,14.6-21.1,27.2-23l140.4-20.4L232,164.6c5.7-11.6,17.3-18.8,30.2-16.8c0.6,0,1,0.4,1,1 v430.1c0,0.4-0.2,0.7-0.5,0.9l-126,66.3C132,646.6,126.6,648,121,648z" style="stroke: black; stroke-opacity: 0;"></path></svg></div><div class="jq-star" style="width:20px;  height:20px;"><svg version="1.0" class="jq-star-svg" shape-rendering="geometricPrecision" xmlns="http://www.w3.org/2000/svg" width="550px" height="500.2px" viewBox="0 146.8 550 500.2" style="enable-background:new 0 0 550 500.2; stroke-width:4px;" xml:space="preserve"><style type="text/css">.svg-empty-350{fill:url(#350_SVGID_1_);}.svg-hovered-350{fill:url(#350_SVGID_2_);}.svg-active-350{fill:url(#350_SVGID_3_);}.svg-rated-350{fill:crimson;}</style><lineargradient id="350_SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="-50" x2="0" y2="500"><stop offset="0" style="stop-color:lightgray"></stop><stop offset="1" style="stop-color:lightgray"></stop> </lineargradient><lineargradient id="350_SVGID_2_" gradientUnits="userSpaceOnUse" x1="0" y1="-50" x2="0" y2="500"><stop offset="0" style="stop-color:#f4c459"></stop><stop offset="1" style="stop-color:#f4c459"></stop> </lineargradient><lineargradient id="350_SVGID_3_" gradientUnits="userSpaceOnUse" x1="0" y1="-50" x2="0" y2="500"><stop offset="0" style="stop-color:#f4c459"></stop><stop offset="1" style="stop-color:#f4c459"></stop> </lineargradient><path data-side="center" class="svg-empty-350" d="M520.9,336.5c-3.8-11.8-14.2-20.5-26.5-22.2l-140.9-20.5l-63-127.7 c-5.5-11.2-16.8-18.2-29.3-18.2c-12.5,0-23.8,7-29.3,18.2l-63,127.7L28,314.2C15.7,316,5.4,324.7,1.6,336.5S1,361.3,9.9,370 l102,99.4l-24,140.3c-2.1,12.3,2.9,24.6,13,32c5.7,4.2,12.4,6.2,19.2,6.2c5.2,0,10.5-1.2,15.2-3.8l126-66.3l126,66.2 c4.8,2.6,10,3.8,15.2,3.8c6.8,0,13.5-2.1,19.2-6.2c10.1-7.3,15.1-19.7,13-32l-24-140.3l102-99.4 C521.6,361.3,524.8,348.3,520.9,336.5z" style="stroke: black; fill: transparent; "></path><path data-side="right" class="svg-active-350" d="M520.9,336.5c-3.8-11.8-14.2-20.5-26.5-22.2l-140.9-20.5l-63-127.7 c-5.5-11.2-16.8-18.2-29.3-18.2c-12.5,0-23.8,7-29.3,18.2l-63,127.7L28,314.2C15.7,316,5.4,324.7,1.6,336.5S1,361.3,9.9,370 l102,99.4l-24,140.3c-2.1,12.3,2.9,24.6,13,32c5.7,4.2,12.4,6.2,19.2,6.2c5.2,0,10.5-1.2,15.2-3.8l126-66.3l126,66.2 c4.8,2.6,10,3.8,15.2,3.8c6.8,0,13.5-2.1,19.2-6.2c10.1-7.3,15.1-19.7,13-32l-24-140.3l102-99.4 C521.6,361.3,524.8,348.3,520.9,336.5z" style="stroke-opacity: 0;"></path><path data-side="left" class="svg-active-350" d="M121,648c-7.3,0-14.1-2.2-19.8-6.4c-10.4-7.6-15.6-20.3-13.4-33l24-139.9l-101.6-99 c-9.1-8.9-12.4-22.4-8.6-34.5c3.9-12.1,14.6-21.1,27.2-23l140.4-20.4L232,164.6c5.7-11.6,17.3-18.8,30.2-16.8c0.6,0,1,0.4,1,1 v430.1c0,0.4-0.2,0.7-0.5,0.9l-126,66.3C132,646.6,126.6,648,121,648z" style="stroke: black; stroke-opacity: 0;"></path></svg></div><div class="jq-star" style="width:20px;  height:20px;"><svg version="1.0" class="jq-star-svg" shape-rendering="geometricPrecision" xmlns="http://www.w3.org/2000/svg" width="550px" height="500.2px" viewBox="0 146.8 550 500.2" style="enable-background:new 0 0 550 500.2; stroke-width:4px;" xml:space="preserve"><style type="text/css">.svg-empty-350{fill:url(#350_SVGID_1_);}.svg-hovered-350{fill:url(#350_SVGID_2_);}.svg-active-350{fill:url(#350_SVGID_3_);}.svg-rated-350{fill:crimson;}</style><lineargradient id="350_SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="-50" x2="0" y2="500"><stop offset="0" style="stop-color:lightgray"></stop><stop offset="1" style="stop-color:lightgray"></stop> </lineargradient><lineargradient id="350_SVGID_2_" gradientUnits="userSpaceOnUse" x1="0" y1="-50" x2="0" y2="500"><stop offset="0" style="stop-color:#f4c459"></stop><stop offset="1" style="stop-color:#f4c459"></stop> </lineargradient><lineargradient id="350_SVGID_3_" gradientUnits="userSpaceOnUse" x1="0" y1="-50" x2="0" y2="500"><stop offset="0" style="stop-color:#f4c459"></stop><stop offset="1" style="stop-color:#f4c459"></stop> </lineargradient><path data-side="center" class="svg-empty-350" d="M520.9,336.5c-3.8-11.8-14.2-20.5-26.5-22.2l-140.9-20.5l-63-127.7 c-5.5-11.2-16.8-18.2-29.3-18.2c-12.5,0-23.8,7-29.3,18.2l-63,127.7L28,314.2C15.7,316,5.4,324.7,1.6,336.5S1,361.3,9.9,370 l102,99.4l-24,140.3c-2.1,12.3,2.9,24.6,13,32c5.7,4.2,12.4,6.2,19.2,6.2c5.2,0,10.5-1.2,15.2-3.8l126-66.3l126,66.2 c4.8,2.6,10,3.8,15.2,3.8c6.8,0,13.5-2.1,19.2-6.2c10.1-7.3,15.1-19.7,13-32l-24-140.3l102-99.4 C521.6,361.3,524.8,348.3,520.9,336.5z" style="stroke: black; fill: transparent; "></path><path data-side="right" class="svg-active-350" d="M520.9,336.5c-3.8-11.8-14.2-20.5-26.5-22.2l-140.9-20.5l-63-127.7 c-5.5-11.2-16.8-18.2-29.3-18.2c-12.5,0-23.8,7-29.3,18.2l-63,127.7L28,314.2C15.7,316,5.4,324.7,1.6,336.5S1,361.3,9.9,370 l102,99.4l-24,140.3c-2.1,12.3,2.9,24.6,13,32c5.7,4.2,12.4,6.2,19.2,6.2c5.2,0,10.5-1.2,15.2-3.8l126-66.3l126,66.2 c4.8,2.6,10,3.8,15.2,3.8c6.8,0,13.5-2.1,19.2-6.2c10.1-7.3,15.1-19.7,13-32l-24-140.3l102-99.4 C521.6,361.3,524.8,348.3,520.9,336.5z" style="stroke-opacity: 0;"></path><path data-side="left" class="svg-active-350" d="M121,648c-7.3,0-14.1-2.2-19.8-6.4c-10.4-7.6-15.6-20.3-13.4-33l24-139.9l-101.6-99 c-9.1-8.9-12.4-22.4-8.6-34.5c3.9-12.1,14.6-21.1,27.2-23l140.4-20.4L232,164.6c5.7-11.6,17.3-18.8,30.2-16.8c0.6,0,1,0.4,1,1 v430.1c0,0.4-0.2,0.7-0.5,0.9l-126,66.3C132,646.6,126.6,648,121,648z" style="stroke: black; stroke-opacity: 0;"></path></svg></div></div>
+                                    <span class="course_rating_stats">
+                                        4,9 (561 avaliações)
+                                        
+                                               &nbsp;&nbsp;60713 alunos
+                                        
+                                    </span>
+                                </div>
+                            
+                            <div class="sub header">Inicie no mundo da programação rapidamente com Python, com aulas práticas e fáceis de serem acompanhadas.</div>
+                        </div>
+                    </h1>
+                    <h5 class="ui inverted header">Guilherme Junqueira</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course details -->
+
+        <div id="course_details">
+            <div class="ui grid container">
+
+                <div class="four wide column pc_item" style="z-index: -100"></div>
+
+                <div class="twelve wide column bigbig">
+
+                    <div class="ui centered aligned segment mobile_item">
+                        
+
+                        <h2 class="ui header">
+                            
+                                Gratuito
+                            
+                        </h2>
+
+                        <div class="ui hidden divider"></div>
+                        
+                            <a href="https://solyd.com.br/ead/course/python-basico/base/" class="ui primary big fluid button" data-tooltip="Você já está matriculado neste curso">Ir para o
+                                curso</a>
+                        
+                    </div>
+
+                    <div class="ui three column grid">
+                        <div class="column">
+                            <div class="ui items">
+                                <div class="ui item">
+                                    <div class="ui mini image">
+                                        <img src="./Python Básico _ Solyd Offensive Security_files/clock_icon.svg">
+                                    </div>
+                                    <div class="middle aligned content">
+                                        <h4>Carga horária: 8h</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="ui items">
+                                <div class="ui item">
+                                    <div class="ui mini image">
+                                        <img src="./Python Básico _ Solyd Offensive Security_files/responsive_icon.svg">
+                                    </div>
+                                    <div class="middle aligned content">
+                                        <h4>Todos dispositivos</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                            <div class="column">
+                                <div class="ui items">
+                                    <div class="ui item">
+                                        <div class="ui mini image">
+                                            <img src="./Python Básico _ Solyd Offensive Security_files/pratical_icon.svg">
+                                        </div>
+                                        <div class="middle aligned content">
+                                            <h4>Exercícios práticos</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        
+                            <div class="column">
+                                <div class="ui items">
+                                    <div class="ui item">
+                                        <div class="ui mini image">
+                                            <img src="./Python Básico _ Solyd Offensive Security_files/lifetime_icon.svg">
+                                        </div>
+                                        <div class="middle aligned content">
+                                            
+                                                <h4>Acesso vitalício</h4>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        
+                            <div class="column">
+                                <div class="ui items">
+                                    <div class="ui item">
+                                        <div class="ui mini image">
+                                            <img src="./Python Básico _ Solyd Offensive Security_files/suport_icon.svg">
+                                        </div>
+                                        <div class="middle aligned content">
+                                            <h4>Suporte a dúvidas</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        
+                            <div class="column">
+                                <div class="ui items">
+                                    <div class="ui item">
+                                        <div class="ui mini image">
+                                            <img src="./Python Básico _ Solyd Offensive Security_files/certificate_icon.svg">
+                                        </div>
+                                        <div class="middle aligned content">
+                                            <h4>Certificado</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        
+                    </div>
+
+                    
+                        <h2 class="ui header">Sobre o curso</h2>
+                        <p>
+                            </p><p>O curso Python Básico é um curso da linguagem de programação Python e lógica de programação para iniciantes, ideal para quem nunca programou ou está querendo migrar para a linguagem Python. O aluno irá aprender a linguagem Python desde o zero absoluto, passará por todos os conceitos principais da linguagem e lógica até a criação de programas mais complexos e de real utilidade. É um curso que pode ser feito por iniciantes, entusiastas e desenvolvedores de qualquer idade e experiência. Trata-se de um curso extremamente completo, detalhado, atualizado, didático e prático. Conta com um sistema de aprendizado passo a passo, que de maneira leve e intuitiva leva o aluno ao aprendizado fácil. O curso é 100% gratuito e conta com certificado e suporte.</p>
+                        <p></p>
+                    
+
+                    
+        <h2 class="ui header">Ementa</h2>
+                        
+    <div class="ui secondary segment syllabus-box" data-value="closed">
+<ul>
+	<li>Aula 1 – Introdução ao Python e Configurando o Ambiente</li>
+	<li>Aula 2 – Variáeis, tipos, entrada, saida e operadores matemáticos</li>
+	<li>Aula 3 –&nbsp;Operadores lógicos e estruturas de decisões (IF e ELSE)</li>
+	<li>Aula 4 – Strings e listas</li>
+	<li>Aula 5 – Estruturas de laço (WHILE e FOR)</li>
+	<li>Aula 6 – Tuplas, Dicionários e Conjuntos</li>
+	<li>Aula 7 – Funções e métodos</li>
+	<li>Aula 8 – Argumentos de linha de comando</li>
+	<li>Aula 9 – Orientação a objeto</li>
+	<li>Aula 10 – Entrada e saída de arquivos</li>
+	<li>Aula 11 – Tratamento de erros e exceções (TRY e EXCEPT)</li>
+	<li>Aula 12 – Bibliotecas, PIP e requisições web</li>
+	<li>Aula 13 – API, JSON e consultando listas de filmes e séries</li>
+	<li>Aula 14 – Expressões regulares, procurando por e-mails</li>
+	<li>Aula 15 – Consultando clima e cotação do dólar</li>
+	<li>Aula 16 – Publicando e pesquisando no twitter</li>
+	<li>Aula 17 – Criando bibliotecas</li>
+</ul>
+    </div>
+                        
+
+                    <h2 class="ui header">Sobre os
+                        instrutores</h2>
+                    <div class="ui stackable centered grid">
+
+                        
+                            <div class="ui four wide centerd aligned column">
+                                <div class="ui small circular image">
+                                    <img src="./Python Básico _ Solyd Offensive Security_files/l33sife6owham9d8wft73si75tb4h1d1.png">
+                                </div>
+                            </div>
+                            <div class="ui twelve wide column">
+                                <div class="ui items">
+                                    <div class="item">
+                                        <div class="content">
+                                            <div class="header">Guilherme Junqueira</div>
+                                            <div class="description" id="bio">
+                                                <p>
+                                                    
+                                                        Bacharel em Sistemas de Informação pela Universidade Federal de Uberlândia. Com mais de 15 anos de experiência em TI, desenvolvedor, pentester e empreendedor. Já foi responsável por pentests em grandes empresas e instituições como OpenBanking Brasil, Caixa e Crefisa. Ministra aulas gratuitas pelo YouTube, onde possui mais de 100 mil inscritos. É CEO da Solyd, Guardsi e  EadGuru.
+                                                    
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+</body>
+</html>
